@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=gtk4-stack-bug-reproducer
+Exec=gtk4-stack-bug-reproducer
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true

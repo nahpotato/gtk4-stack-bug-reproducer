@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/org/example/App">
+    <file>gtk4_stack_bug_reproducer-window.ui</file>
+  </gresource>
+</gresources>

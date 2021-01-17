@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+
+<template class="Gtk4StackBugReproducerWindow" parent="GtkApplicationWindow">
+
+  <child type="titlebar">
+    <object class="GtkHeaderBar" id="header_bar">
+
+      <child type="title">
+        <object class="GtkStack" id="stack">
+          <property name="transition-type">crossfade</property>
+
+          <child>
+            <object class="GtkStackPage">
+              <property name="name">entry</property>
+
+              <property name="child">
+                <object class="GtkSearchEntry" />
+              </property>
+
+            </object>
+          </child>
+
+          <child>
+            <object class="GtkStackPage">
+              <property name="name">label</property>
+
+              <property name="child">
+                <object class="GtkLabel">
+                  <property name="label">Replay</property>
+                </object>
+              </property>
+
+            </object>
+          </child>
+
+        </object>
+      </child>
+
+    </object>
+  </child>
+
+  <child>
+    <object class="AdwFlap" id="flap">
+      <signal name="notify::folded" handler="on_flap_folded_changed" object="Gtk4StackBugReproducerWindow" swapped="yes" />
+
+      <child type="flap">
+        <object class="GtkLabel">
+          <property name="label">A long label for the flap</property>
+        </object>
+      </child>
+
+      <child>
+        <object class="GtkLabel">
+          <property name="label">A long label for the content</property>
+        </object>
+      </child>
+
+    </object>
+  </child>
+
+</template>
+
+</interface>
